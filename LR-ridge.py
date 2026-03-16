@@ -28,7 +28,7 @@ mse = np.mean((pred - y) ** 2)
 print(f"Weights: {w}")
 print(f"MSE: {mse:.4f}")
 
-# --- Visualizations ---
+#  Visualizations 
 fig, axes = plt.subplots(1, 3, figsize=(14, 4))
 
 # 1. Predicted vs Actual
@@ -46,7 +46,7 @@ axes[1].set_xlabel("Residual")
 axes[1].set_ylabel("Frequency")
 axes[1].set_title("Residuals Distribution")
 
-# 3. Feature weights (excluding bias)
+# 3. feature weights (excluding bias)
 feature_names = housing.feature_names[:5]
 axes[2].barh(feature_names, w[1:], color="steelblue")
 axes[2].axvline(x=0, color="black", linestyle="-", lw=0.5)
