@@ -1,6 +1,5 @@
 # Machine Learning Practice
 
----
 
 ## Simple Linear Regression
 
