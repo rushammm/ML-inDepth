@@ -22,7 +22,6 @@ I[0, 0] = 0
 lam = 1.0
 w = np.linalg.inv(X.T @ X + lam * I) @ X.T @ y
 
-
 # predict & evaluate
 pred = X @ w
 mse = np.mean((pred - y) ** 2)

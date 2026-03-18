@@ -14,7 +14,6 @@ X = (X - np.mean(X, axis=0)) / np.std(X, axis=0)
 # add bias
 X = np.column_stack([np.ones(len(X)), X])
 
-
 def train_lasso(X, y, alpha, lr=0.0001, epochs=3000):
     w = np.zeros(X.shape[1])
 
@@ -36,7 +35,6 @@ def train_lasso(X, y, alpha, lr=0.0001, epochs=3000):
         w = w - lr * (grad_error + grad_penalty)
 
     return w
-
 
 w_lasso = train_lasso(X, y, alpha=0.01)
 pred_lasso = X @ w_lasso
