@@ -45,10 +45,11 @@ mse_lasso = np.mean((pred_lasso - y) ** 2)
 print(f"Weights: {w_lasso}")
 print(f"MSE: {mse_lasso:.4f}")
 
-# Predicted vs Actual
-plt.scatter(y, pred_lasso, alpha=0.3, s=10)
-plt.plot([y.min(), y.max()], [y.min(), y.max()], "r--", lw=2)
-plt.xlabel("Actual")
-plt.ylabel("Predicted")
-plt.title("Lasso: Predicted vs Actual")
+# Feature Weights visualization
+feature_names = ["MedInc", "HouseAge", "AveRooms", "AveBedrms", "Population"]
+plt.barh(feature_names, w_lasso[1:], color="coral")
+plt.axvline(x=0, color="black", linestyle="-", lw=0.5)
+plt.xlabel("Weight")
+plt.title("Lasso: Feature Weights (α=0.01)")
+plt.tight_layout()
 plt.show()

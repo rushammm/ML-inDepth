@@ -29,10 +29,11 @@ mse = np.mean((pred - y) ** 2)
 print(f"Weights: {w}")
 print(f"MSE: {mse:.4f}")
 
-# Predicted vs Actual
-plt.scatter(y, pred, alpha=0.3, s=10)
-plt.plot([y.min(), y.max()], [y.min(), y.max()], "r--", lw=2)
-plt.xlabel("Actual")
-plt.ylabel("Predicted")
-plt.title("Predicted vs Actual")
+# Feature Weights visualization
+feature_names = ["MedInc", "HouseAge", "AveRooms", "AveBedrms", "Population"]
+plt.barh(feature_names, w[1:], color="steelblue")
+plt.axvline(x=0, color="black", linestyle="-", lw=0.5)
+plt.xlabel("Weight")
+plt.title("Ridge: Feature Weights (λ=1)")
+plt.tight_layout()
 plt.show()
