@@ -14,7 +14,7 @@ X = (X - np.mean(X, axis=0)) / np.std(X, axis=0)
 # add bias
 X = np.column_stack([np.ones(len(X)), X])
 
-# identity matrix (don't penalize bias)
+# identity matrix (don't penalize the intercept)
 I = np.eye(X.shape[1])
 I[0, 0] = 0
 

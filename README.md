@@ -8,9 +8,7 @@
   <img src="SLR-visualisations.png" width="600" alt="SLR Visualizations"/>
 </p>
 
-<p align="center">
-  <img src="SLR-byhand.py(5).png" width="600" alt="SLR Code"/>
-</p>
+
 
 ---
 
@@ -24,9 +22,6 @@
   <img src="MLR-visualisations.jpeg" width="600" alt="MLR Visualizations"/>
 </p>
 
-<p align="center">
-  <img src="MLR-byhand.py.png" width="600" alt="MLR Code"/>
-</p>
 
 ---
 
@@ -36,9 +31,6 @@
   <img src="lasso.png" width="600" alt="Lasso Output"/>
 </p>
 
-<p align="center">
-  <img src="LR-lasso.py.png" width="600" alt="Lasso Code"/>
-</p>
 
 ---
 
