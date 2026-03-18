@@ -1,5 +1,5 @@
 # Machine Learning Practice
-
+Just revsiting classical ML models and coding them by hand. I've used the California Housing Dataset from sklearn for all these. 
 
 ## Simple Linear Regression
 
