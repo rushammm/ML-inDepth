@@ -32,3 +32,8 @@ Just revsiting classical ML models and coding them by hand. I've used the Califo
   <img src="images/lasso-ridge.py.jpeg" width="600" alt="Ridge and Lasso Code"/>
 </p>
 
+## ElasticNet Regularization 
+
+<p align="center">
+  <img src="images/elasticnet-reg.png" width="600" alt="elasticnet reg feature weights visualisation"/>
+</p>
