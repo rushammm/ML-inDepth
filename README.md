@@ -37,3 +37,9 @@ Just revsiting classical ML models and coding them by hand. I've used the Califo
 <p align="center">
   <img src="images/elasticnet-reg.png" width="600" alt="elasticnet reg feature weights visualisation"/>
 </p>
+
+## KNN (K-Nearest Neighbors)
+
+<p align="center">
+  <img src="images/KNN.jpeg" width="600" alt="KNN Algorithm Visualization"/>
+</p>
