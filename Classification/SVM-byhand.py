@@ -71,7 +71,6 @@ print(f"Accuracy: {accuracy * 100:.2f}%")
 
 
 
-
 ## In SVM, labels are -1 and +1 (not 0 and 1)
 # The model gives a raw score using wX + b
 # - Positive score = model thinks class +1
