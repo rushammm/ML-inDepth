@@ -1,45 +1,25 @@
 # Machine Learning Practice 🌟
-Just revsiting classical ML models and coding them by hand. I've used the California Housing Dataset from sklearn for all these. 
+Just revsiting classical ML models and coding them by hand. Datasets used: California Housing (sklearn), Breast Cancer Wisconsin (sklearn), Digits (sklearn), and Titanic (Kaggle).
 
-## Simple Linear Regression
+## Regression
 
-<p align="center">
-  <img src="images/SLR-visualisations.png" width="600" alt="SLR Visualizations"/>
-</p>
+| Model | Output |
+|-------|--------|
+| **Simple Linear Regression** | <img src="images/SLR-visualisations.png" width="350"/> |
+| **Multiple Linear Regression** | <img src="images/mlr-graph.png" width="350"/> |
+| **Lasso Regression** | <img src="images/lasso.png" width="350"/> |
+| **Ridge & Lasso** | <img src="images/lasso-ridge.py.jpeg" width="350"/> |
+| **ElasticNet** | <img src="images/elasticnet-reg.png" width="350"/> |
 
+## Classification
 
-## Multiple Linear Regression
+| Model | Output |
+|-------|--------|
+| **KNN** | <img src="images/KNN.jpeg" width="350"/> |
+| **Logistic Regression** | Coming soon |
 
-<p align="center">
-  <img src="images/mlr-graph.png" width="600" alt="MLR Graph"/>
-</p>
+## Projects
 
-<p align="center">
-  <img src="images/MLR-visualisations.jpeg" width="600" alt="MLR Visualizations"/>
-</p>
-
-
-## Lasso Regression
-
-<p align="center">
-  <img src="images/lasso.png" width="600" alt="Lasso Output"/>
-</p>
-
-
-## Ridge & Lasso Regression
-
-<p align="center">
-  <img src="images/lasso-ridge.py.jpeg" width="600" alt="Ridge and Lasso Code"/>
-</p>
-
-## ElasticNet Regularization 
-
-<p align="center">
-  <img src="images/elasticnet-reg.png" width="600" alt="elasticnet reg feature weights visualisation"/>
-</p>
-
-## KNN (K-Nearest Neighbors)
-
-<p align="center">
-  <img src="images/KNN.jpeg" width="600" alt="KNN Algorithm Visualization"/>
-</p>
+| Project | Dataset | Model |
+|---------|---------|-------|
+| Titanic Survival Prediction | Kaggle Titanic | Logistic Regression (from scratch) |
