@@ -1,7 +1,7 @@
 # Machine Learning Practice 🌟
 Just revsiting classical ML models and coding them by hand. Datasets used: California Housing (sklearn), Breast Cancer Wisconsin (sklearn), Digits (sklearn), and Titanic (Kaggle).
 
-📌 Following the [roadmap.sh/machine-learning](https://roadmap.sh/machine-learning) roadmap — see [ROADMAP.md](ROADMAP.md) for full progress tracker.
+Following the [roadmap.sh/machine-learning](https://roadmap.sh/machine-learning) roadmap — see [ROADMAP.md](ROADMAP.md) for full progress tracker.
 
 ## Regression
 
