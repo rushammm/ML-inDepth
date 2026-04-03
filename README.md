@@ -19,9 +19,11 @@ Following the [roadmap.sh/machine-learning](https://roadmap.sh/machine-learning)
 |-------|--------|
 | **KNN** | <img src="images/KNN.jpeg" width="350"/> |
 | **Logistic Regression** | Coming soon |
+| **SVM** | Coming soon |
 
 ## Projects
 
 | Project | Dataset | Model |
 |---------|---------|-------|
 | Titanic Survival Prediction | Kaggle Titanic | Logistic Regression (from scratch) |
+| Spam Detection | SMS Spam Collection (Kaggle) | SVM (from scratch) |
