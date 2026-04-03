@@ -8,11 +8,11 @@ class LogisticRegression:
         self.weights = None
         self.bias = None
     
-    # step 1 — sigmoid function
+    # define sigmoid function
     def sigmoid(self, z):
         return 1 / (1 + np.exp(-z))
     
-    # step 2 — train the model
+    # train the model
     def fit(self, X, y):
         n_samples, n_features = X.shape
         
@@ -23,11 +23,11 @@ class LogisticRegression:
         # gradient descent
         for _ in range(self.epochs):
             
-            # forward pass
+            # forward pass ( linear eq (with bias n weights) + sigmoid call)
             z = np.dot(X, self.weights) + self.bias
             y_pred = self.sigmoid(z)
             
-            # compute gradients
+            # compute gradients (how much weights n bias contributed to error)
             dw = (1 / n_samples) * np.dot(X.T, (y_pred - y))
             db = (1 / n_samples) * np.sum(y_pred - y)
             
@@ -35,32 +35,33 @@ class LogisticRegression:
             self.weights = self.weights - self.lr * dw
             self.bias    = self.bias    - self.lr * db
     
-    # step 3 — predict probabilities
+    #  predict probabilities
     def predict_proba(self, X):
         z = np.dot(X, self.weights) + self.bias
         return self.sigmoid(z)
     
-    # step 4 — predict class (0 or 1)
+    #  predict class (0 or 1) -- threshold applied 
     def predict(self, X, threshold=0.5):
         probabilities = self.predict_proba(X)
         return (probabilities >= threshold).astype(int)
 
 
-# usage 
-from sklearn.datasets import make_classification
+# breast cancer dataset
+from sklearn.datasets import load_breast_cancer
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
 
-# Dummy dataset
-X, y = make_classification(n_samples=500, n_features=5, random_state=42)
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+cancer = load_breast_cancer()
+X, y = cancer.data, cancer.target
 
-# Train
-model = LogisticRegression(learning_rate=0.1, epochs=1000)
+scaler = StandardScaler()
+X = scaler.fit_transform(X)
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+model = LogisticRegression(learning_rate=0.01, epochs=1000)
 model.fit(X_train, y_train)
 
-# Predict
 predictions = model.predict(X_test)
-
-# Accuracy
 accuracy = np.mean(predictions == y_test)
-print(f"Accuracy: {accuracy * 100:.2f}%")
+print(f"Accuracy: {accuracy:.4f}")
