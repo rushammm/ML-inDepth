@@ -1,4 +1,4 @@
-# Machine Learning Practice 🌟
+# Machine Learning in Depth using Python 🌟
 Implementing ML models from scratch and building small projects alongside for better understanding.
 
 Following the [roadmap.sh/machine-learning](https://roadmap.sh/machine-learning) roadmap — see [ROADMAP.md](ROADMAP.md) for full progress tracker.
