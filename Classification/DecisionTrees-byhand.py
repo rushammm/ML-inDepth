@@ -9,7 +9,6 @@ class DecisionTree:
         self.root = None
     
     # gini Impurity — measures how mixed a node is
-  
     def gini(self, y):
         counts = Counter(y)
         impurity = 1
