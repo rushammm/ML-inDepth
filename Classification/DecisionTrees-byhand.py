@@ -8,7 +8,7 @@ class DecisionTree:
         self.min_samples_split = min_samples_split
         self.root = None
     
-    # gini Impurity — measures how mixed a node is
+    # gini impurity — measures how mixed a node is
     def gini(self, y):
         counts = Counter(y)
         impurity = 1
@@ -19,7 +19,7 @@ class DecisionTree:
     
     # find the best split for a node
     def best_split(self, X, y):
-        best_gini = float('inf')
+        best_gini = float('inf') # set to worst possible 
         best_feature = None
         best_threshold = None
         
