@@ -40,8 +40,8 @@ Following [roadmap.sh/machine-learning](https://roadmap.sh/machine-learning)
 - [x] KNN (K-Nearest Neighbors)
 - [x] Logistic Regression
 - [x] SVM (Support Vector Machine)
-- [ ] Decision Trees
-- [ ] Random Forest
+- [x] Decision Trees
+- [x] Random Forest
 - [ ] Gradient Boosting (XGBoost, LightGBM)
 - [ ] Naive Bayes
 

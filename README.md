@@ -16,6 +16,8 @@ Following the [roadmap.sh/machine-learning](https://roadmap.sh/machine-learning)
 - KNN (K-Nearest Neighbors)
 - Logistic Regression
 - SVM (Support Vector Machine)
+- Decision Trees
+- Random Forest
 
 ## Projects
 
