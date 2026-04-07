@@ -8,9 +8,9 @@ Following the [roadmap.sh/machine-learning](https://roadmap.sh/machine-learning)
 
 | Category | Models | Status |
 |----------|--------|--------|
-| Regression | Linear, Multiple, Lasso, Ridge, ElasticNet | ✅ Complete |
-| Classification | KNN, Logistic Regression, SVM, Decision Trees, Random Forest | ✅ Complete |
-| Unsupervised | K-Means, DBSCAN, PCA, ... | ⬜ Up next |
+| Regression | Linear, Multiple, Lasso, Ridge, ElasticNet |  Complete |
+| Classification | KNN, Logistic Regression, SVM, Decision Trees, Random Forest |  Complete |
+| Unsupervised | K-Means, DBSCAN, PCA, ... |  Up next |
 
 ## Models Implemented
 
