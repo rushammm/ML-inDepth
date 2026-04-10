@@ -1,4 +1,4 @@
-# Machine Learning from Scratch — Python
+# Machine Learning from Scratch using Python
 
 Implementing classical ML models from scratch using only NumPy, and building small projects alongside for deeper understanding. No sklearn for model logic — just math and code.
 
