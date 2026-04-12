@@ -10,39 +10,39 @@ class GradientBoostingClassifier:
         self.trees         = []
         self.initial_pred  = None
     
-    # Sigmoid to convert raw scores to probabilities
+    # sigmoid to convert raw scores to probabilities
     def sigmoid(self, x):
         return 1 / (1 + np.exp(-x))
     
     def fit(self, X, y):
-        # Step 1 — initial prediction (log odds of the mean)
+        # step 1 — initial prediction (log odds of the mean)
         mean = np.mean(y)
         self.initial_pred = np.log(mean / (1 - mean))
         
-        # Start with initial prediction for all samples
+        # start with initial prediction for all samples
         F = np.full(len(y), self.initial_pred)
         
         for _ in range(self.n_estimators):
             
-            # Step 2 — compute residuals (negative gradient)
+            # step 2 — compute residuals (negative gradient)
             probabilities = self.sigmoid(F)
             residuals     = y - probabilities
             
-            # Step 3 — fit a tree to the residuals
+            # step 3 — fit a tree to the residuals
             tree = DecisionTreeRegressor(max_depth=self.max_depth)
             tree.fit(X, residuals)
             
-            # Step 4 — update predictions
+            # step 4 — update predictions
             F = F + self.learning_rate * tree.predict(X)
             
-            # Save tree
+            # save tree
             self.trees.append(tree)
     
     def predict_proba(self, X):
-        # Start with initial prediction
+        # start with initial prediction
         F = np.full(X.shape[0], self.initial_pred)
         
-        # Add each tree's contribution
+        # add each tree's contribution
         for tree in self.trees:
             F = F + self.learning_rate * tree.predict(X)
         
@@ -53,7 +53,6 @@ class GradientBoostingClassifier:
         return (probabilities >= threshold).astype(int)
 
 
-# ---- Usage ----
 from sklearn.datasets import load_breast_cancer
 from sklearn.model_selection import train_test_split
 
