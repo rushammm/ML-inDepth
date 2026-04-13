@@ -10,29 +10,31 @@ class GradientBoostingClassifier:
         self.trees         = []
         self.initial_pred  = None
     
-    # sigmoid to convert raw scores to probabilities
+    # sigmoid to convert to probabilities
     def sigmoid(self, x):
         return 1 / (1 + np.exp(-x))
     
     def fit(self, X, y):
-        # step 1 — initial prediction (log odds of the mean)
+        #  initial prediction - since we need to have a starting point 
         mean = np.mean(y)
+        # log-odds cuz gbm work with log values not probabilities 
         self.initial_pred = np.log(mean / (1 - mean))
-        
-        # start with initial prediction for all samples
+
+        # store initial pred in F
         F = np.full(len(y), self.initial_pred)
         
         for _ in range(self.n_estimators):
             
-            # step 2 — compute residuals (negative gradient)
+            # convert F into probability using sigmoid 
             probabilities = self.sigmoid(F)
+            # calc residuals (actual - pred)
             residuals     = y - probabilities
             
-            # step 3 — fit a tree to the residuals
+            # train a tree on residuals = sees how wrong are we
             tree = DecisionTreeRegressor(max_depth=self.max_depth)
             tree.fit(X, residuals)
             
-            # step 4 — update predictions
+            # update F using the tree's predictions and learning rate
             F = F + self.learning_rate * tree.predict(X)
             
             # save tree
