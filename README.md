@@ -31,6 +31,7 @@ Following the [roadmap.sh/machine-learning](https://roadmap.sh/machine-learning)
 | SVM (Support Vector Machine) | [`SVM-byhand.py`](Classification/SVM-byhand.py) |
 | Decision Trees | [`DecisionTrees-byhand.py`](Classification/DecisionTrees-byhand.py) |
 | Random Forest | [`Randomforest-byhand.py`](Classification/Randomforest-byhand.py) |
+| Gradient Boosting Machines | [`GradientBoostingMachines-byhand.py`](Classification/GradientBoostingMachines-byhand.py) |
 
 ## Projects
 
