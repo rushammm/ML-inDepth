@@ -18,10 +18,10 @@ class KMeans:
             # for each point, calc distance to each centroid
             labels = self._assign_clusters(X)
 
-            # Step 3: update centroids (mean of each cluster)
+            # update centroids (mean of each cluster)
             new_centroids = np.array([X[labels == i].mean(axis=0) for i in range(self.k)])
 
-            # Step 4: check convergence (if centroids didn't move, break)
+            #  check convergence (if centroids didn't move, break)
             if np.allclose(self.centroids, new_centroids):
                 break
 
