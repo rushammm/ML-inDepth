@@ -42,7 +42,7 @@ Following [roadmap.sh/machine-learning](https://roadmap.sh/machine-learning)
 - [x] SVM (Support Vector Machine)
 - [x] Decision Trees
 - [x] Random Forest
-- [ ] Gradient Boosting (XGBoost, LightGBM)
+- [x] Gradient Boosting (XGBoost, LightGBM)
 - [ ] Naive Bayes
 
 ---
@@ -57,10 +57,10 @@ Following [roadmap.sh/machine-learning](https://roadmap.sh/machine-learning)
 ---
 
 ## 6. Unsupervised Learning
-- [ ] K-Means Clustering
-- [ ] Hierarchical Clustering
-- [ ] DBSCAN
-- [ ] PCA (Principal Component Analysis)
+- [x] K-Means Clustering
+- [x] Hierarchical Clustering
+- [x] DBSCAN
+- [x] PCA (Principal Component Analysis)
 
 ---
 

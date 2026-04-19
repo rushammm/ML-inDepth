@@ -39,6 +39,7 @@ Following the [roadmap.sh/machine-learning](https://roadmap.sh/machine-learning)
 |---------|---------|-------|------|
 | Titanic Survival Prediction | [Kaggle Titanic](https://www.kaggle.com/c/titanic) | Logistic Regression (from scratch) | [`log-reg-titanic.ipynb`](Classification/Projects/Titanic-Survival/log-reg-titanic.ipynb) |
 | Spam Detection | [SMS Spam Collection](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset) | SVM (from scratch) | [`svm-spamdetection.ipynb`](Classification/Projects/SVM-Proj/svm-spamdetection.ipynb) |
+| [Healthcare Resource Predictor](https://github.com/rushammm/Healthcare-Resource-Predictor) | Breast Cancer Wisconsin | Decision Tree, Random Forest, Gradient Boosting | [`modelcomparison-trees.ipynb`](Classification/Projects/BreastCancer-dt-rf-gbm/modelcomparison-trees.ipynb) |
 
 ## Visualisations
 
