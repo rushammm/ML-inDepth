@@ -48,11 +48,11 @@ Following [roadmap.sh/machine-learning](https://roadmap.sh/machine-learning)
 ---
 
 ## 5. Model Evaluation
-- [ ] Confusion Matrix
-- [ ] Accuracy, Precision, Recall, F1-Score
-- [ ] ROC-AUC Curve
-- [ ] Cross Validation (K-Fold, LOOCV)
-- [ ] Bias-Variance Tradeoff
+- [x] Confusion Matrix
+- [x] Accuracy, Precision, Recall, F1-Score
+- [x] ROC-AUC Curve
+- [x] Cross Validation (K-Fold, LOOCV)
+- [x] Bias-Variance Tradeoff
 
 ---
 
