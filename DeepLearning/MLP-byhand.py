@@ -10,7 +10,8 @@ def sigmoid_derivative(a):
 
 class MLP:
     def __init__(self, n_input, n_hidden, n_output, lr=0.1):
-        # random small weights, zero biases
+        # random small weights, zero biases 
+
         self.W1 = np.random.randn(n_input,  n_hidden) * 0.5
         self.b1 = np.zeros((1, n_hidden))
         self.W2 = np.random.randn(n_hidden, n_output) * 0.5
@@ -19,11 +20,11 @@ class MLP:
 
     # forward propagation 
     def forward(self, X):
-        # Layer 1: input -> hidden
+        # layer 1: input -> hidden
         self.Z1 = X @ self.W1 + self.b1          # weighted sum
         self.A1 = sigmoid(self.Z1)                # activation
 
-        # Layer 2: hidden -> output
+        # layer 2: hidden -> output
         self.Z2 = self.A1 @ self.W2 + self.b2
         self.A2 = sigmoid(self.Z2)                # final prediction
         return self.A2
@@ -65,7 +66,7 @@ class MLP:
 if __name__ == "__main__":
     np.random.seed(42)
 
-    # The XOR problem — what a single perceptron CAN'T solve
+    # the XOR problem — what a single perceptron CAN'T solve
     X = np.array([[0, 0],
                   [0, 1],
                   [1, 0],
