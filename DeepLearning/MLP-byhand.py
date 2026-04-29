@@ -49,7 +49,6 @@ class MLP:
         self.b2 -= self.lr * db2
         self.W1 -= self.lr * dW1
         self.b1 -= self.lr * db1
-
     #  training loop 
     def train(self, X, y, epochs=10000):
         for epoch in range(epochs):
