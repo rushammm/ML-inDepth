@@ -1,6 +1,6 @@
 import numpy as np
 
-# ---------- activations ----------
+# activations 
 def sigmoid(z):
     return 1 / (1 + np.exp(-z))
 
@@ -14,7 +14,7 @@ def softmax(z):
     return exp_z / np.sum(exp_z, axis=1, keepdims=True)
 
 
-# ---------- one-hot encoding ----------
+#  one-hot encoding 
 def one_hot(y, n_classes):
     # turns labels like [0, 2, 1] into [[1,0,0],[0,0,1],[0,1,0]]
     m = y.shape[0]
