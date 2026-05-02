@@ -18,6 +18,21 @@ X = np.column_stack([ones, X])
 # train 
 w = np.linalg.inv(X.T @ X) @ X.T @ y
 
+# option 2: gradient descent
+w  = np.zeros(X.shape[1])
+lr = 0.01
+for _ in range(1000):
+    w -= lr * (2/n) * X.T @ (X @ w - y)
+
+
+# Ridge
+w -= lr * ((2/n) * X.T @ (X @ w - y) + 2*alpha*w)
+
+# Lasso
+w -= lr * ((2/n) * X.T @ (X @ w - y) + alpha*np.sign(w))
+
+
+
 # predict
 predictions = X @ w
 
