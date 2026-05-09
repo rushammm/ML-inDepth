@@ -65,10 +65,12 @@ Following [roadmap.sh/machine-learning](https://roadmap.sh/machine-learning)
 ---
 
 ## 7. Deep Learning
-- [ ] Perceptron & MLPs
-- [ ] Activation Functions (ReLU, Sigmoid, Softmax)
-- [ ] Forward & Back Propagation
-- [ ] Loss Functions
+- [x] Perceptron & MLPs
+- [x] Activation Functions (Sigmoid, Softmax)
+- [x] Forward & Back Propagation
+- [x] Loss Functions (BCE, Categorical Cross-Entropy)
+- [x] Optimizers from scratch (SGD, Momentum, Adam)
+- [x] End-to-end project: Fashion-MNIST classifier (87.62% test accuracy)
 - [ ] CNNs (Convolutional Neural Networks)
 - [ ] RNNs (Recurrent Neural Networks)
 - [ ] LSTMs & GRUs

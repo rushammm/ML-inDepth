@@ -8,9 +8,10 @@ Following the [roadmap.sh/machine-learning](https://roadmap.sh/machine-learning)
 
 | Category | Models | Status |
 |----------|--------|--------|
-| Regression | Linear, Multiple, Lasso, Ridge, ElasticNet |  Complete |
-| Classification | KNN, Logistic Regression, SVM, Decision Trees, Random Forest |  Complete |
-| Unsupervised | K-Means, DBSCAN, PCA, ... |  Up next |
+| Regression | Linear, Multiple, Lasso, Ridge, ElasticNet | Complete |
+| Classification | KNN, Logistic Regression, SVM, Decision Trees, Random Forest, Gradient Boosting | Complete |
+| Unsupervised | K-Means, Hierarchical, DBSCAN, PCA | Complete |
+| Deep Learning | Perceptron, MLP, Adam optimizer, Fashion-MNIST classifier | In progress (CNNs next) |
 
 ## Models Implemented
 
@@ -33,6 +34,24 @@ Following the [roadmap.sh/machine-learning](https://roadmap.sh/machine-learning)
 | Random Forest | [`Randomforest-byhand.py`](Classification/Randomforest-byhand.py) |
 | Gradient Boosting Machines | [`GradientBoostingMachines-byhand.py`](Classification/GradientBoostingMachines-byhand.py) |
 
+### Unsupervised
+| Model | Code |
+|-------|------|
+| K-Means Clustering | [`Kmeans-byhand.py`](Unsupervised/Kmeans-byhand.py) |
+| Hierarchical Clustering | [`Hierarchical-byhand.py`](Unsupervised/Hierarchical-byhand.py) |
+| DBSCAN | [`DBSCAN-byhand.py`](Unsupervised/DBSCAN-byhand.py) |
+| PCA (Principal Component Analysis) | [`PCA-byhand.py`](Unsupervised/PCA-byhand.py) |
+
+### Deep Learning
+| Model | Code |
+|-------|------|
+| Perceptron | [`Perceptron-byhand.py`](DeepLearning/Perceptron-byhand.py) |
+| MLP (XOR, SGD) | [`MLP-byhand.py`](DeepLearning/MLP-byhand.py) |
+| MLP with Momentum | [`MLP-momentum.py`](DeepLearning/MLP-momentum.py) |
+| MLP with Adam | [`MLP-adam.py`](DeepLearning/MLP-adam.py) |
+| Softmax MLP (multi-class) | [`softmax-mlp.py`](DeepLearning/softmax-mlp.py) |
+| Moons MLP | [`projects/moons-mlp.py`](DeepLearning/projects/moons-mlp.py) |
+
 ## Projects
 
 | Project | Dataset | Model | Code |
@@ -40,6 +59,7 @@ Following the [roadmap.sh/machine-learning](https://roadmap.sh/machine-learning)
 | Titanic Survival Prediction | [Kaggle Titanic](https://www.kaggle.com/c/titanic) | Logistic Regression (from scratch) | [`log-reg-titanic.ipynb`](Classification/Projects/Titanic-Survival/log-reg-titanic.ipynb) |
 | Spam Detection | [SMS Spam Collection](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset) | SVM (from scratch) | [`svm-spamdetection.ipynb`](Classification/Projects/SVM-Proj/svm-spamdetection.ipynb) |
 | [Healthcare Resource Predictor](https://github.com/rushammm/Healthcare-Resource-Predictor) | [WHO / World Bank](https://github.com/rushammm/Healthcare-Resource-Predictor) | Decision Tree, Random Forest, Gradient Boosting | [GitHub repo](https://github.com/rushammm/Healthcare-Resource-Predictor) |
+| [Fashion-MNIST Classifier](https://github.com/rushammm/fashion-mnist) | [Fashion-MNIST (HuggingFace)](https://huggingface.co/datasets/fashion_mnist) | MLP from scratch with Adam (NumPy only) — 87.62% test accuracy | [GitHub repo](https://github.com/rushammm/fashion-mnist) |
 
 ## Visualisations
 
