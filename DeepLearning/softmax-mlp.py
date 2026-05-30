@@ -1,6 +1,11 @@
+"""
+Softmax MLP from scratch in numpy.
+Architecture: input -> hidden (sigmoid) -> output (softmax).
+Trained with cross-entropy loss + vanilla gradient descent.
+"""
 import numpy as np
 
-# activations 
+# activations
 def sigmoid(z):
     return 1 / (1 + np.exp(-z))
 
@@ -25,11 +30,15 @@ def one_hot(y, n_classes):
 
 class MLP:
     def __init__(self, n_input, n_hidden, n_output, lr=0.1):
+        # weights + biases
         self.W1 = np.random.randn(n_input,  n_hidden) * 0.5
         self.b1 = np.zeros((1, n_hidden))
         self.W2 = np.random.randn(n_hidden, n_output) * 0.5
         self.b2 = np.zeros((1, n_output))
         self.lr = lr
+
+        # cached activations (filled in by forward, used by backward)
+        self.Z1 = self.A1 = self.Z2 = self.A2 = None
 
     # forward propagation
     def forward(self, X):
