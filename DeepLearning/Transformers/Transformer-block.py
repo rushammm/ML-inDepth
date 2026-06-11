@@ -11,10 +11,6 @@ class SelfAttention(nn.Module):
         self.W_q = nn.Linear(d_model, d_model)   # turns a word vector into its query
         self.W_k = nn.Linear(d_model, d_model)   # ... its key
         self.W_v = nn.Linear(d_model, d_model)   # ... its val
-        
-        
-        
-        ue
         self.d_model = d_model
 
     def forward(self, x):                         # x: (batch, seq_len, d_model)
@@ -26,6 +22,7 @@ class SelfAttention(nn.Module):
         scores = (Q @ K.transpose(-2, -1)) / (self.d_model ** 0.5)   # (batch, seq, seq)
         # STEP 2 — normalize: softmax into attention weights
         weights = F.softmax(scores, dim=-1)
+        self.last_weights = weights                                  # stash for inspection
         # STEP 3 — gather: weighted blend of the values
         return weights @ V                                          # (batch, seq, d_model)
 
